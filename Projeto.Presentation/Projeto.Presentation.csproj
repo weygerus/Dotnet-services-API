@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>2023.8.31.1940</AssemblyVersion>
+    <FileVersion>2023.8.31.1940</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.61.0.3148" />
+  </ItemGroup>
+
+</Project>
