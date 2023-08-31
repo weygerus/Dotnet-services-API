@@ -17,6 +17,8 @@ namespace Projeto.Presentation.Auth
                 ApplicationName = "My First Project",
             });
 
+            var alteracao = "";
+
             return sheetsService;
         }
     }
