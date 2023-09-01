@@ -18,6 +18,8 @@ namespace Projeto.Presentation.Auth
                 ApplicationName = "",
             });
 
+            var alteracao = "";
+
             return sheetsService;
         }
     }
