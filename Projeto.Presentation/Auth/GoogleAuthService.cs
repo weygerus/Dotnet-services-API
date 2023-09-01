@@ -8,13 +8,14 @@ namespace Projeto.Presentation.Auth
     {
         public SheetsService AuthenticateGoogleApiUse()
         {
-            var credencialPath = "";
+            var credencialPath = "C:\\dev\\Github\\Starter\\Starter\\Projeto.Presentation\\Auth\\starterproject-397714-8d3a0b6cd71b.json";
+
             var credentialFile = GoogleCredential.FromFile(credencialPath);
 
             var sheetsService = new SheetsService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credentialFile,
-                ApplicationName = "My First Project",
+                ApplicationName = "",
             });
 
             return sheetsService;

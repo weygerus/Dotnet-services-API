@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Domain.GoogleSheets
 {
-    public class bookingRegistration
+    public class BookingRegistration
     {
         public string Name { get; set; }
 

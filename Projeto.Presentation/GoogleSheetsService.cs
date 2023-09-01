@@ -1,19 +1,29 @@
 ﻿using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
-using Newtonsoft.Json.Linq;
+using Projeto.Domain.GoogleSheets;
 using Projeto.Presentation.Auth;
 
 namespace Projeto.Presentation
 {
     public class GoogleSheetsService
     {
-        public string Integrate()
+        public string Integrate(BookingRegistration bookingRegistration)
         {
-            var sheetsId = "PlanilhaTeste";
+            var sheetsId = "1EJOw6Ivp-unNVq8vA823JqRyYrPFvgzvUvnd4nrCc24";
 
             var range = "sheet1!A1:E1";
 
-            var register = new List<IList<object>> { new List<object> {"coluna1", "coluna2", "coluna3", "coluna4", "coluna5" } };
+            var register = new List<IList<object>>
+            {
+                new List<object>
+                {
+                    bookingRegistration.Name,
+                    bookingRegistration.Document,
+                    bookingRegistration.EventType,
+                    bookingRegistration.Description,
+                    bookingRegistration.EventDateTime.ToString()
+                }
+            };
 
             var valueRange = new ValueRange()
             {

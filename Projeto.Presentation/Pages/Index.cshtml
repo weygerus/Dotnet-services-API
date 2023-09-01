@@ -4,6 +4,36 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <button asp-page-handler=Integrate>Integrar</button>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <h2 class="text-center mb-4">Reservas</h2>
+
+            <form method="post">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input asp-for="Nome" type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                </div>
+                <div class="mb-3">
+                    <label for="Documento" class="form-label">CPF:</label>
+                    <input asp-for="Documento" type="text" class="form-control" id="email" placeholder="Digite seu CPF">
+                </div>
+                <div class="mb-3">
+                    <label for="TipoEvento" class="form-label">Tipo de evento:</label>
+                    <input asp-for="TipoEvento" class="form-control" id="mensagem" rows="4" placeholder="Tipo de evento">
+                </div>
+                <div class="mb-3">
+                    <label for="Descricao" class="form-label">Descrição:</label>
+                    <input asp-for="Descricao" class="form-control" id="mensagem" rows="4" placeholder="Descrição">
+                </div>
+                <div class="mb-3">
+                    <label for="DataEvento" class="form-label">Data do Evento:</label>
+                    <input asp-for="DataEvento" type="date" class="form-control" id="mensagem" rows="4" placeholder="Hora do evento">
+                </div>      
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+        </div>
+    </div>
 </div>
