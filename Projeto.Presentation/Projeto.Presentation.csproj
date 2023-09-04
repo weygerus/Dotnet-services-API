@@ -4,8 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>2023.9.1.1932</AssemblyVersion>
-    <FileVersion>2023.9.1.1932</FileVersion>
+    <AssemblyVersion>2023.9.4.1938</AssemblyVersion>
+    <FileVersion>2023.9.4.1938</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -8,7 +8,7 @@ namespace Projeto.Presentation.Auth
     {
         public SheetsService AuthenticateGoogleApiUse()
         {
-            var credencialPath = "C:\\dev\\Starter\\Projeto.Presentation\\Auth\\starterproject-397714-8d3a0b6cd71b.json";
+            var credencialPath = "C:\\dev\\Github\\Starter\\Starter\\Projeto.Presentation\\Auth\\starterproject-397714-8d3a0b6cd71b.json";
 
             var credentialFile = GoogleCredential.FromFile(credencialPath);
 

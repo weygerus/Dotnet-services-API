@@ -2,29 +2,24 @@
 using Google.Apis.Sheets.v4.Data;
 using Projeto.Domain.GoogleSheets;
 using Projeto.Presentation.Auth;
+using Projeto.Infrastructure;
 using Projeto.Infrastructure.Data.Validations;
 
 namespace Projeto.Presentation
 {
     public class GoogleSheetsService
     {
-        private readonly BookingRegistrationDataValidation _ValidationRepository;
 
-        public GoogleSheetsService(BookingRegistrationDataValidation validationsRepository)
+        public GoogleSheetsService()
         {
-            _ValidationRepository = validationsRepository;
+
         }
 
-        public async Task<string> Integrate(BookingRegistration bookingRegistration)
+        public string Integrate(BookingRegistration bookingRegistration)
         {
             var sheetInfo = GetSheetInfo();
 
             var formattedEventDatetime = GetFormattedEventDatetimeString(bookingRegistration.EventDateTime);
-
-            var isRegisterAvailable = _ValidationRepository.ValidateBookingRegistration(bookingRegistration, formattedEventDatetime);
-
-            if (!isRegisterAvailable)
-                return "Evento não pode ser cadastrado!";
 
             var register = new List<IList<object>>
             {
@@ -54,7 +49,7 @@ namespace Projeto.Presentation
         {
             var sheetInfo = new SheetInfo()
             {
-                SheetId = "1dxRUYdMk3yqhZLlYWzdHpHN8L7JFyHlSwrSe8y6mfSE",
+                SheetId = "1EJOw6Ivp-unNVq8vA823JqRyYrPFvgzvUvnd4nrCc24",
                 Range = "sheet1!A1:E1"
             };
 
@@ -95,6 +90,5 @@ namespace Projeto.Presentation
 
             public string Range { get; set; }
         }
-
     }
 }
