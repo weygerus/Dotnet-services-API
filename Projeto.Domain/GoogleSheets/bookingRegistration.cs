@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projeto.Domain.GoogleSheets
+﻿namespace Projeto.Domain.GoogleSheets
 {
     public class BookingRegistration
     {
@@ -17,5 +11,13 @@ namespace Projeto.Domain.GoogleSheets
         public string Description { get; set; }
 
         public DateTime EventDateTime { get; set; }
+
+        public BookingRegistration()
+        {
+            Name = "";
+            Document = "";
+            EventType = "";
+            Description = "";
+        }
     }
 }
