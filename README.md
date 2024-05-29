@@ -3,6 +3,6 @@ o cadastro de eventos, serviços recorrentes, integração com a Plataforma de N
 
 O repositório engloba um conjunto robusto de funcionalidades projetadas para otimizar a comunicação, gerenciamento de eventos e sincronização de dados entre diferentes plataformas.
 
-ecnologias Utilizadas:
+Tecnologias Utilizadas:
 
 C# (dotnet 6)/ SQL Server/ Hangfire/ Entity FrameworkCore/ Dapper/ Google Cloud/ Razor pages/ Bibliotecas de Manipulação de XML e Arquivos de Texto
